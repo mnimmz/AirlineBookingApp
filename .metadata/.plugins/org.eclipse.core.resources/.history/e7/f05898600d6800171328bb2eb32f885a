@@ -25,7 +25,10 @@ public class BookFlight {
 	
 //	Flight availability variables
 	private static String trip;
+	
+//	private String storeFlightNumber;
 	private String storeFlightNumberToRT;
+//	private String storeFlightNumberReturnRT;
 	private int roundtrippart2;
 	
 	

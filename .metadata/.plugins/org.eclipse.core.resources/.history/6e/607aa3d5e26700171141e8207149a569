@@ -25,7 +25,10 @@ public class BookFlight {
 	
 //	Flight availability variables
 	private static String trip;
+	
+//	private String storeFlightNumber;
 	private String storeFlightNumberToRT;
+//	private String storeFlightNumberReturnRT;
 	private int roundtrippart2;
 	
 	
@@ -188,7 +191,7 @@ public class BookFlight {
 		String [] toArray = {"Philadelphia", "Detroit", "Atlanta"};
 		
 		for (int t = 0; t < toArray.length; t++){
-			tocity[t] = toArray[t];
+			fromcity[t] = toArray[t];
 			destinationflag++;
 			if(todestination.equals(toArray[t])){
 				
@@ -211,7 +214,7 @@ public class BookFlight {
 		String [] fromArray = {"NewYork", "Miami", "Chicago"};
 		
 		for (int f = 0; f < fromArray.length; f++){
-			fromcity[f] = fromArray[f];
+			tocity[f] = toArray[f];
 			destinationflag++;
 			if(fromdestination.equals(fromArray[f])){
 				System.out.println("*valid destination*");
@@ -618,7 +621,7 @@ public class BookFlight {
 				printitinerary.newLine();
 				printitinerary.write("To destination city: " + to);
 				printitinerary.newLine();
-				printitinerary.write("From destination city: " + from);
+				printitinerary.write("To destination city: " + from);
 				printitinerary.newLine();
 				printitinerary.write("Price: " + onewayprice[onewayflag]);
 				printitinerary.newLine();
@@ -662,7 +665,7 @@ public class BookFlight {
 				printitinerary.newLine();
 				printitinerary.write("To destination city: " + to);
 				printitinerary.newLine();
-				printitinerary.write("From destination city: " + from);
+				printitinerary.write("To destination city: " + from);
 				printitinerary.newLine();
 				printitinerary.write("Price: " + roundtriptoprice[roundtripflag]);
 				
@@ -676,7 +679,7 @@ public class BookFlight {
 				printitinerary.newLine();
 				printitinerary.write("Arrival: " + roundtriptotimeHome[roundtripflag2]);
 				printitinerary.newLine();
-				printitinerary.write("From destination city: " + from);
+				printitinerary.write("To destination city: " + from);
 				printitinerary.newLine();
 				printitinerary.write("To destination city: " + to);
 				printitinerary.newLine();
